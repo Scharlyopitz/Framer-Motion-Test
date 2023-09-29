@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100%;
+  font-family: "Roboto Condensed";
+  background-color: #424242;
+}
+
+section {
+  width: 100vw;
+  height: 200vh;
+  background-color: #ffffff;
+}
+
+#about {
+  height: 100vh;
+  transform-origin: bottom;
+  color: #ffffff;
+}
+#about .image {
+  background-image: url("/Abstract.jpeg");
+  width: 200px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+#about .textAbout {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  overflow: hidden;
+}
+#about .containerLorem {
+  position: absolute;
+  top: 30%;
+  width: 20%;
+  right: 5%;
+  text-align: justify;
+}
+#about .containerLorem div {
+  overflow: hidden;
+}
+
+.loader {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ee1e31;
+  animation-delay: 2.5s;
+  z-index: 5;
+}
+.loader div {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  animation-delay: 1s;
+}
+.loader p {
+  color: #ffffff;
+  font-size: 500px;
+}
+
+@keyframes displayNone {
+  100% {
+    display: none;
+  }
+}
+#home .progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background: #000000;
+  transform-origin: top;
+}
+#home button {
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+#home .text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  overflow: hidden;
+}
+#home .text-container .welcome,
+#home .text-container .home {
+  display: flex;
+}
+#home .text-container .welcome {
+  margin-right: 20px;
+}
+#home .text-container h1 {
+  font-size: 50px;
+}
+#home .image {
+  background-image: url("/Abstract.jpeg");
+  width: 200px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+#home .image:nth-child(1) {
+  top: 10%;
+  left: 20%;
+}
+#home .image:nth-child(2) {
+  top: 20%;
+  right: 15%;
+}
+#home .image:nth-child(3) {
+  bottom: 5%;
+  left: 5%;
+}
+#home .image:nth-child(4) {
+  bottom: 5%;
+  left: 40%;
+}
+#home .image:nth-child(5) {
+  top: 10%;
+  right: 35%;
+}
+
+header {
+  margin-top: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 30%;
+  z-index: 2;
+  display: flex;
+}
+header a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #000000;
+}
+header .container-text {
+  overflow: hidden;
+  height: 2vh;
+}
+header .container-text span {
+  display: inline-block;
+}/*# sourceMappingURL=style.css.map */

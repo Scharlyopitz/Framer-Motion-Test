@@ -1,0 +1,33 @@
+.loader {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $red;
+    // animation: displayNone forwards;
+    animation-delay: 2.5s;
+    z-index: 5;
+
+    div {
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        // animation: overflownone 1s forwards;
+        animation-delay: 1s;
+    }
+
+    p {
+        color: $white;
+        font-size: 500px;
+    }
+}
+
+@keyframes displayNone {
+    100% {
+        display: none;
+    }
+}

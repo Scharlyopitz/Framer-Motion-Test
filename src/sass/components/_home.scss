@@ -1,0 +1,73 @@
+#home {
+    .progressBar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 100%;
+        background: $black;
+        transform-origin: top;
+    }
+
+    button {
+        border: none;
+        background: transparent;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 50%;
+    }
+
+    .text-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        overflow: hidden;
+
+        .welcome,
+        .home {
+            display: flex;
+        }
+
+        .welcome {
+            margin-right: 20px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+    }
+
+    .image {
+        background-image: url("/Abstract.jpeg");
+        width: 200px;
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+
+        &:nth-child(1) {
+            top: 10%;
+            left: 20%;
+        }
+        &:nth-child(2) {
+            top: 20%;
+            right: 15%;
+        }
+        &:nth-child(3) {
+            bottom: 5%;
+            left: 5%;
+        }
+        &:nth-child(4) {
+            bottom: 5%;
+            left: 40%;
+        }
+        &:nth-child(5) {
+            top: 10%;
+            right: 35%;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+header {
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 30%;
+    z-index: 2;
+    display: flex;
+
+    a {
+        margin: 0 20px;
+        text-decoration: none;
+        color: $black;
+    }
+
+    .container-text {
+        overflow: hidden;
+        height: 2vh;
+
+        span {
+            display: inline-block;
+        }
+    }
+}
