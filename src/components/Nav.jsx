@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import { useState, useEffect } from "react";
 
-export default function Nav({ location, load }) {
+export default function Nav({ location, load, base }) {
     const [aboutPage, setAboutPage] = useState(false);
 
     useEffect(() => {
@@ -45,7 +45,7 @@ export default function Nav({ location, load }) {
         <>
             <header>
                 <Link
-                    to="/"
+                    to={`${base}`}
                     onMouseEnter={whileHoverHome}
                     onMouseLeave={whileLeaveHome}
                 >
@@ -99,7 +99,7 @@ export default function Nav({ location, load }) {
                     </motion.div>
                 </Link>
                 <Link
-                    to="/about"
+                    to={`${base}about`}
                     onMouseEnter={whileHoverAbout}
                     onMouseLeave={whileLeaveAbout}
                 >
