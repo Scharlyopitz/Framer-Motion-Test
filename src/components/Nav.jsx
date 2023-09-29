@@ -7,7 +7,7 @@ export default function Nav({ location, load, base }) {
     const [aboutPage, setAboutPage] = useState(false);
 
     useEffect(() => {
-        if (location.pathname === "/about") {
+        if (location.pathname === `${base}about`) {
             setAboutPage(true);
         } else {
             setAboutPage(false);
